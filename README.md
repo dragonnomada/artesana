@@ -1,6 +1,14 @@
-# artesana
+# artesana de Etsy
 
 Hackathon 2022 Etsy - Lleva el Talento Artesanal Mexicano a todo el mundo
+
+# Equipo nomad
+
+> Alan Badillo
+>
+> Eduardo Badillo
+>
+> Marisol Romero
 
 ## Prototipo funcional
 
