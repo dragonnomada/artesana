@@ -1,17 +1,27 @@
 <template>
+<template v-if="page === 'home'">
   <Artesana />
+</template>
+<template v-else-if="page === 'historias'">
+  <ArtesanaHistorias />
+</template>
 </template>
 
 <script setup>
-// v1.0.0 r2
-
 import Artesana from './components/Artesana.vue';
+import ArtesanaHistorias from './components/ArtesanaHistorias.vue';
 
 import { onBeforeUnmount, onMounted, provide, ref } from 'vue'
+
+const page = ref('home')
 
 const scrollPosition = ref(0)
 const scrollLocked = ref(false)
 
+provide('page', page)
+provide('page/@change', newPage => {
+  page.value = newPage
+})
 provide('scroll', scrollPosition)
 
 function updateScroll() {
