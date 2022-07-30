@@ -1,8 +1,8 @@
-# artesana de Etsy
+# Artesana de Etsy
 
 Hackathon 2022 Etsy - Lleva el Talento Artesanal Mexicano a todo el mundo
 
-# Equipo nomad
+## Equipo nomad
 
 > Alan Badillo
 >
