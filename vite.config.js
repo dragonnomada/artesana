@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/artesana",
+  base: "https://dragonnomada.github.io/artesana/",
   plugins: [vue()],
   resolve: {
     alias: {
