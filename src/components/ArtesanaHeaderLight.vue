@@ -6,7 +6,7 @@
         </div>
         <div class="artesana-menu">
             <div class="artesana-sites">
-                <div class="artesana-sites-item">
+                <div class="artesana-sites-item active">
                     <span>Historias</span>
                 </div>
                 <div class="artesana-sites-item">
@@ -33,8 +33,6 @@
 
 <script setup>
 import { inject } from 'vue';
-
-const scroll = inject('scroll')
 </script>
 
 <style scoped>
@@ -89,11 +87,24 @@ const scroll = inject('scroll')
 
 .artesana-sites-item {
     padding: 0px 12px;
+
+    cursor: pointer;
+}
+
+.artesana-sites-item:hover {
+    text-decoration: underline;
+}
+
+.artesana-sites-item.active {
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 .artesana-store-button {
-    background-color: #F45800;
+    border: 1px solid black;
     border-radius: 20px;
     padding: 6px 12px;
+
+    font-weight: 600;
 }
 </style>

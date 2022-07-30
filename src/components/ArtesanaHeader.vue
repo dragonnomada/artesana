@@ -6,19 +6,19 @@
         </div>
         <div class="artesana-menu">
             <div class="artesana-sites">
-                <div class="artesana-sites-item">
+                <div class="artesana-sites-item" @click="openPage('historias')">
                     <span>Historias</span>
                 </div>
-                <div class="artesana-sites-item">
+                <div class="artesana-sites-item" @click="openPage('nosotros')">
                     <span>Nosotros</span>
                 </div>
-                <div class="artesana-sites-item">
+                <div class="artesana-sites-item" @click="openPage('aprender')">
                     <span>Aprender</span>
                 </div>
-                <div class="artesana-sites-item">
+                <div class="artesana-sites-item" @click="openPage('miTienda')">
                     <span>MiTienda</span>
                 </div>
-                <div class="artesana-sites-item">
+                <div class="artesana-sites-item" @click="openPage('ayuda')">
                     <span>Ayuda</span>
                 </div>
             </div>
@@ -35,6 +35,7 @@
 import { inject } from 'vue';
 
 const scroll = inject('scroll')
+const openPage = inject('page/@change')
 </script>
 
 <style scoped>
@@ -89,6 +90,12 @@ const scroll = inject('scroll')
 
 .artesana-sites-item {
     padding: 0px 12px;
+
+    cursor: pointer;
+}
+
+.artesana-sites-item:hover {
+    text-decoration: underline;
 }
 
 .artesana-store-button {
