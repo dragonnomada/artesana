@@ -5,8 +5,7 @@
     </p>
     <p class="description">
       Promueve ventas las 24 horas del día, los 365 días del
-      año, a millones de clientes
-      <strong class="description-emphasis-1">Etsy</strong>
+      año, a millones de clientes <span class="description-emphasis-1">Etsy</span>
     </p>
     <div class="flex-wrapper-one">
       <div class="start-button">
@@ -92,7 +91,6 @@ import EtsyLogo from './EtsyLogo.vue';
 .description {
   height: 10.49%;
   width: 50.32%;
-  display: flex;
   margin-bottom: 29px;
   font-family: "Lato";
   font-size: 24px;
@@ -149,17 +147,17 @@ import EtsyLogo from './EtsyLogo.vue';
   margin-bottom: 63px;
   display: flex;
   align-items: flex-start;
+  padding-right: 30%;
 }
 .store-now {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  &:not(:last-of-type) {
-    margin-right: 94px;
-  }
+  padding-right: 48px;
 }
 .store-now-icon {
-  width: 16.71%;
+  width: 15.22%;
   height: 25.15%;
   margin-bottom: 19.7px;
 }
@@ -184,9 +182,11 @@ import EtsyLogo from './EtsyLogo.vue';
   display: flex;
 }
 .store-story {
+  width: 100%;
   margin-right: 65px;
   display: flex;
   flex-direction: column;
+  padding-right: 48px;
   align-items: flex-start;
 }
 .store-story-icon {
@@ -205,7 +205,7 @@ import EtsyLogo from './EtsyLogo.vue';
   margin-bottom: 20px;
 }
 .store-improve-icon {
-  width: 14.54%;
+  width: 15.22%;
   height: 25.15%;
   margin-bottom: 19.7px;
 }
