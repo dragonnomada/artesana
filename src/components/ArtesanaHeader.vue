@@ -1,6 +1,6 @@
 <template>
     <div class="artesana-header" :class="{ scroll: scroll >= 100 }">
-        <div class="artesana-logo">
+        <div class="artesana-logo" @click="openPage('home')">
             <span>arte</span>
             <span>sana</span>
         </div>
@@ -63,6 +63,8 @@ const openPage = inject('page/@change')
 }
 
 .artesana-logo {
+    cursor: pointer;
+
     display: flex;
 
     font-size: 1.5rem;
