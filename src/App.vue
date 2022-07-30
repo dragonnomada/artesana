@@ -3,6 +3,8 @@
 </template>
 
 <script setup>
+// v1.0.0 r2
+
 import Artesana from './components/Artesana.vue';
 
 import { onBeforeUnmount, onMounted, provide, ref } from 'vue'
