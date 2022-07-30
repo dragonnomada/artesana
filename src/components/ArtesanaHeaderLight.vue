@@ -6,19 +6,24 @@
         </div>
         <div class="artesana-menu">
             <div class="artesana-sites">
-                <div class="artesana-sites-item active">
+                <div class="artesana-sites-item" :class="{ active: props.page === 'historias' }"
+                    @click="openPage('historias')">
                     <span>Historias</span>
                 </div>
-                <div class="artesana-sites-item">
+                <div class="artesana-sites-item" :class="{ active: props.page === 'nosotros' }"
+                    @click="openPage('nosotros')">
                     <span>Nosotros</span>
                 </div>
-                <div class="artesana-sites-item">
+                <div class="artesana-sites-item" :class="{ active: props.page === 'aprender' }"
+                    @click="openPage('aprender')">
                     <span>Aprender</span>
                 </div>
-                <div class="artesana-sites-item">
+                <div class="artesana-sites-item" :class="{ active: props.page === 'miTienda' }"
+                    @click="openPage('miTienda')">
                     <span>MiTienda</span>
                 </div>
-                <div class="artesana-sites-item">
+                <div class="artesana-sites-item" :class="{ active: props.page === 'ayuda' }"
+                    @click="openPage('ayuda')">
                     <span>Ayuda</span>
                 </div>
             </div>
@@ -33,6 +38,15 @@
 
 <script setup>
 import { inject } from 'vue';
+
+const props = defineProps({
+    page: {
+        type: String,
+        default: "none"
+    }
+})
+
+const openPage = inject('page/@change')
 </script>
 
 <style scoped>
